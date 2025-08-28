@@ -1,11 +1,12 @@
-function App() {
+import { Route, Routes } from "react-router-dom";
+import { Main } from "./pages/main";
+
+const App = () => {
   return (
-    <>
-      <h1 className="flex text-3xl font-bold text-red-500 underline">
-        Hello world!
-      </h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Main />} />
+    </Routes>
   );
-}
+};
 
 export default App;
